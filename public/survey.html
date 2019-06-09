@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Friend Finder 2.0</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        #survey {
+            text-align: center;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<div class="jumbotron jumbotron-fluid" id="survey">
+    <div class="container">
+        <h1 class="display-5">Friend Finder 2.0</h1>
+        <p class="lead">Complete the survey to find your ideal friend</p>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="results-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Best Match:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="match-name"></p>
+                <img id="match-photo">
+            </div>
+            <div class="modal-footer">
+                <button id="modal-button" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div id="topHeader">
+        <p id="headerText">Just a little info about you, Good luck.</p>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="form-group">
+                <label for="formGroupExampleInput">Your name (required)</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Link to photo image (required)</label>
+                <input type="text" class="form-control" id="photo" placeholder="http:// etc.">
+            </div>
+        </form>
+    </div>
+</div>
+
+<p id="instructions">Please answers the following questions accordingly; (1 = Strongly Disagree, 5 = Strongly Agree):
+</p>
+
+<div id="questions">
+
+    <div id="q1">
+        <form class="qform">
+            <p class="question">Question 1:</p>
+            <p>Would you consider yourself to be a morning person:</p>
+            <div>
+                <input type="radio" id="q1-1" name="q1" value="1">
+                <label for="q1-1">1</label>
+
+                <input type="radio" id="q1-2" name="q1" value="2">
+                <label for="q1-2">2</label>
+
+                <input type="radio" id="q1-3" name="q1" value="3">
+                <label for="q1-3">3</label>
+
+                <input type="radio" id="q1-4" name="q1" value="4">
+                <label for="q1-4">4</label>
+
+                <input type="radio" id="q1-5" name="q1" value="5">
+                <label for="q1-5">5</label>
+            </div>
+        </form>
+    </div>
+
+    <div>
+            <button id="submit"type="submit">Submit</button>
+        </div>
+</div>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
