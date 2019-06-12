@@ -1,110 +1,334 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-    <title>Friend Finder 2.0</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
-        #survey {
-            text-align: center;
-        }
-    </style>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
-<div class="jumbotron jumbotron-fluid" id="survey">
-    <div class="container">
-        <h1 class="display-5">Friend Finder 2.0</h1>
-        <p class="lead">Complete the survey to find your ideal friend</p>
-    </div>
-</div>
-<div class="modal fade" tabindex="-1" role="dialog" id="results-modal">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Best Match:</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p id="match-name"></p>
-                <img id="match-photo">
-            </div>
-            <div class="modal-footer">
-                <button id="modal-button" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="card">
-    <div id="topHeader">
-        <p id="headerText">Just a little info about you, Good luck.</p>
-    </div>
-    <div class="card-body">
-        <form method="POST">
-            <div class="form-group">
-                <label for="formGroupExampleInput">Your name (required)</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <div class="form-group">
-                <label for="formGroupExampleInput2">Link to photo image (required)</label>
-                <input type="text" class="form-control" id="photo" placeholder="http:// etc.">
-            </div>
-        </form>
-    </div>
-</div>
-
-<p id="instructions">Please answers the following questions accordingly; (1 = Strongly Disagree, 5 = Strongly Agree):
-</p>
-
-<div id="questions">
-
-    <div id="q1">
-        <form class="qform">
-            <p class="question">Question 1:</p>
-            <p>Would you consider yourself to be a morning person:</p>
-            <div>
-                <input type="radio" id="q1-1" name="q1" value="1">
-                <label for="q1-1">1</label>
-
-                <input type="radio" id="q1-2" name="q1" value="2">
-                <label for="q1-2">2</label>
-
-                <input type="radio" id="q1-3" name="q1" value="3">
-                <label for="q1-3">3</label>
-
-                <input type="radio" id="q1-4" name="q1" value="4">
-                <label for="q1-4">4</label>
-
-                <input type="radio" id="q1-5" name="q1" value="5">
-                <label for="q1-5">5</label>
-            </div>
-        </form>
-    </div>
-
-    <div>
-            <button id="submit"type="submit">Submit</button>
-        </div>
-</div>
 
 <body>
+  <div class="container-fluid">
+    <div class="row">
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+      <div class="col-1"></div>
+
+      <div class="col-10 mt-2">
+        <h2>Friend Survey 2.0!</h2>
+        <hr>
+        <div class="form-group">
+          <label for="">Name</label>
+          <input id="nameInput" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+          <small id="helpId" class="form-text text-muted">required</small>
+        </div>
+        <div class="form-group">
+          <label for="">Link to a photo of you</label>
+          <input id="photo" type="text" class="form-control" name="" id="" aria-describedby="helpId"
+            placeholder="">
+          <small id="helpId" class="form-text text-muted">required</small>
+        </div>
+        <hr>
+        <div class="q1">
+          Question 1: Good Morning America<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="0">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q2">
+          Question 2: Trying to sleep and code just don't work.<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="1">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q3">
+          Question 3: Can you lick your elbow<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="2">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q4">
+          Question 4: Listen to instrumentals music over the radio<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="3">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q5">
+          Question 5: Squirrel<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="4">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q6">
+          Question 6: Spent many hours on this assignment<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="5">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q7">
+          Question 7: Taco Tuesday<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="6">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q8">
+          Question 8: How has coding been for you?<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="7">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q9">
+          Question 9: Are you a fan of the Live action Disney movies?<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="8">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <div class="q10">
+          Question 10: Is your favorite color yellow?<br>
+          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="9">
+            <label class="surveyValue btn btn-secondary active">
+              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
+                data-clicked="false"> 1
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
+            </label>
+            <label class="surveyValue btn btn-secondary">
+              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
+            </label>
+          </div>
+        </div>
+        <button id="submitS" type="submit" class="mt-2 mb-4 btn btn-primary">Submit</button>
+        <hr>
+        <div class="mt-1 mb-2">
+          <a href="/api/friends">api</a> | <a href="https://github.com/Mgncoding/friend-finder">github</a>
+        </div>
+      </div>
+
+      <div class="col-1"></div>
+
+
+
+
+      <!-- modal -->
+      <div id="resultsModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">You've been paired up with:</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6 style="font-size: 35px; text-decoration: underline;" id="matchName" class="mb-2"></h6>
+              <div style="text-align: center">
+                <img id="matchImg" class="img-responsive" style="max-height: 250px;" src="">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- logic -->
+  <script type="text/javascript"></script>
+  <script>
+    var surveyChoices = []
+    //adding values to memory
+    $('.surveyValue').on('click', function () {
+      var value = $(this).children('.selection').attr('data-value')
+      var questions = $(this).parent('.btn-group').attr('data-question')
+      surveyChoices[questions] = value
+    })
+    $('#submitS').on('click', function (event) {
+      event.preventDefault()
+      if (surveyChoices.length === 10 && $('#nameInput').val() != "" && $('#photo').val() != "") {
+        //modal
+        $('#resultsModal').modal('show');
+        var newSurvey = {
+          name: $('#nameInput').val().trim(),
+          photo: $('#photo').val().trim(),
+          scores: surveyChoices
+        }
+        $.ajax('/api/friends', {
+          type: "POST",
+          data: newSurvey
+        }).then(function (match) {
+          console.log(match.name, match.photo)
+          $('#matchName').text(match.name)
+          $('#matchImg').attr('src', match.photo)
+        })
+        $.ajax('/api/friends')
+      } else {
+        alert('Please fill all fields')
+      }
+    })
+  </script>
+
+
+
+
 </body>
 
 </html>
