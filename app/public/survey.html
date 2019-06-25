@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- bootstrap -->
@@ -21,265 +21,134 @@
       <div class="col-10 mt-2">
         <h2>Friend Survey 2.0!</h2>
         <hr>
-        <div class="form-group">
-          <label for="">Name</label>
-          <input id="nameInput" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-          <small id="helpId" class="form-text text-muted">required</small>
-        </div>
-        <div class="form-group">
-          <label for="">Link to a photo of you</label>
-          <input id="photo" type="text" class="form-control" name="" id="" aria-describedby="helpId"
-            placeholder="">
-          <small id="helpId" class="form-text text-muted">required</small>
-        </div>
-        <hr>
-        <div class="q1">
-          Question 1: Good Morning America<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="0">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+
+        <form id=form-friend>
+          <div class="user-info">
+            <label for="">Name</label>
+            <input id="name" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <small id="helpId" class="form-text text-muted">required</small>
+            <br>
+            <label for="">Link to a photo of you</label>
+            <input id="photo" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+            <small id="helpId" class="form-text text-muted">required</small>
           </div>
-        </div>
-        <div class="q2">
-          Question 2: Trying to sleep and code just don't work.<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="1">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <hr>
+          <div class="q1">
+            Question 1: Good Morning America<br>
+            <input type="radio" name="q1" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q1" value="2"> Agree<br>
+            <input type="radio" name="q1" value="3"> Neutral<br>
+            <input type="radio" name="q1" value="4"> Disagree<br>
+            <input type="radio" name="q1" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q3">
-          Question 3: Can you lick your elbow<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="2">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q2">
+            Question 2: Trying to sleep and code just don't work.<br>
+            <input type="radio" name="q2" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q2" value="2"> Agree<br>
+            <input type="radio" name="q2" value="3"> Neutral<br>
+            <input type="radio" name="q2" value="4"> Disagree<br>
+            <input type="radio" name="q2" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q4">
-          Question 4: Listen to instrumentals music over the radio<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="3">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q3">
+            Question 3: Can you lick your elbow<br>
+            <input type="radio" name="q3" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q3" value="2"> Agree<br>
+            <input type="radio" name="q3" value="3"> Neutral<br>
+            <input type="radio" name="q3" value="4"> Disagree<br>
+            <input type="radio" name="q3" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q5">
-          Question 5: Squirrel<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="4">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q4">
+            Question 4: Listen to instrumentals music over the radio<br>
+            <input type="radio" name="q4" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q4" value="2"> Agree<br>
+            <input type="radio" name="q4" value="3"> Neutral<br>
+            <input type="radio" name="q4" value="4"> Disagree<br>
+            <input type="radio" name="q4" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q6">
-          Question 6: Spent many hours on this assignment<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="5">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q5">
+            Question 5: Squirrel<br>
+            <input type="radio" name="q5" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q5" value="2"> Agree<br>
+            <input type="radio" name="q5" value="3"> Neutral<br>
+            <input type="radio" name="q5" value="4"> Disagree<br>
+            <input type="radio" name="q5" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q7">
-          Question 7: Taco Tuesday<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="6">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q6">
+            Question 6: Spent many hours on this assignment<br>
+            <input type="radio" name="q6" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q6" value="2"> Agree<br>
+            <input type="radio" name="q6" value="3"> Neutral<br>
+            <input type="radio" name="q6" value="4"> Disagree<br>
+            <input type="radio" name="q6" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q8">
-          Question 8: How has coding been for you?<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="7">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q7">
+            Question 7: Taco Tuesday<br>
+            <input type="radio" name="q7" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q7" value="2"> Agree<br>
+            <input type="radio" name="q7" value="3"> Neutral<br>
+            <input type="radio" name="q7" value="4"> Disagree<br>
+            <input type="radio" name="q7" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q9">
-          Question 9: Are you a fan of the Live action Disney movies?<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="8">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q8">
+            Question 8: How has coding been for you?<br>
+            <input type="radio" name="q8" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q8" value="2"> Agree<br>
+            <input type="radio" name="q8" value="3"> Neutral<br>
+            <input type="radio" name="q8" value="4"> Disagree<br>
+            <input type="radio" name="q8" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <div class="q10">
-          Question 10: Is your favorite color yellow?<br>
-          <div class="btn-group btn-group-toggle mb-3 mt-1" data-toggle="buttons" data-question="9">
-            <label class="surveyValue btn btn-secondary active">
-              <input class="selection" type="radio" name="options" data-value="1" autocomplete="off"
-                data-clicked="false"> 1
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="2" autocomplete="off"> 2
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="3" autocomplete="off"> 3
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="4" autocomplete="off"> 4
-            </label>
-            <label class="surveyValue btn btn-secondary">
-              <input class="selection" type="radio" name="options" data-value="5" autocomplete="off"> 5
-            </label>
+          <div class="q9">
+            Question 9: Are you a fan of the Live action Disney movies?<br>
+            <input type="radio" name="q9" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q9" value="2"> Agree<br>
+            <input type="radio" name="q9" value="3"> Neutral<br>
+            <input type="radio" name="q9" value="4"> Disagree<br>
+            <input type="radio" name="q9" value="5"> Strongly Disagree<br>
           </div>
-        </div>
-        <button id="submitS" type="submit" class="mt-2 mb-4 btn btn-primary">Submit</button>
-        <hr>
-        <div class="mt-1 mb-2">
-          <a href="/api/friends">api</a> | <a href="https://github.com/Mgncoding/friend-finder">github</a>
-        </div>
+          <div class="q10">
+            Question 10: Is your favorite color yellow?<br>
+            <input type="radio" name="q10" value="1" required> Strongly Agree<br>
+            <input type="radio" name="q10" value="2"> Agree<br>
+            <input type="radio" name="q10" value="3"> Neutral<br>
+            <input type="radio" name="q10" value="4"> Disagree<br>
+            <input type="radio" name="q10" value="5"> Strongly Disagree<br>
+          </div>
       </div>
-
-      <div class="col-1"></div>
-
-
-
-
-      <!-- modal -->
-      <div id="resultsModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">You've been paired up with:</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <h6 style="font-size: 35px; text-decoration: underline;" id="matchName" class="mb-2"></h6>
-              <div style="text-align: center">
-                <img id="matchImg" class="img-responsive" style="max-height: 250px;" src="">
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
+      <button id="submitS" type="submit" class="mt-2 mb-4 btn btn-primary">Submit</button>
+      <hr>
+      <div class="mt-1 mb-2">
+        <a href="/api/friends">api</a> | <a href="https://github.com/Mgncoding/friend-finder">github</a>
       </div>
-
     </div>
+    </form>
+    <!-- <div class="col-1"></div> -->
+
+
+
+
+    <!-- modal -->
+    <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Your best match</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center" id="friend-result" style="color: black;">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
   </div>
 
   <!-- bootstrap scripts -->
@@ -287,43 +156,44 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
   <!-- logic -->
   <script type="text/javascript"></script>
   <script>
-    var surveyChoices = []
-    //adding values to memory
-    $('.surveyValue').on('click', function () {
-      var value = $(this).children('.selection').attr('data-value')
-      var questions = $(this).parent('.btn-group').attr('data-question')
-      surveyChoices[questions] = value
-    })
-    $('#submitS').on('click', function (event) {
-      event.preventDefault()
-      if (surveyChoices.length === 10 && $('#nameInput').val() != "" && $('#photo').val() != "") {
-        //modal
-        $('#resultsModal').modal('show');
-        var newSurvey = {
-          name: $('#nameInput').val().trim(),
-          photo: $('#photo').val().trim(),
-          scores: surveyChoices
-        }
-        $.ajax('/api/friends', {
-          type: "POST",
-          data: newSurvey
-        }).then(function (match) {
-          console.log(match.name, match.photo)
-          $('#matchName').text(match.name)
-          $('#matchImg').attr('src', match.photo)
-        })
-        $.ajax('/api/friends')
-      } else {
-        alert('Please fill all fields')
+    $("#form-friend").on("submit", function (event) {
+      event.preventDefault();
+
+      var newFriend = {
+        name: $("input[name='name']").val().trim(),
+        photo: $("input[name='photo']").val().trim(),
+        scores: [
+          $('input[name="q1"]:checked').val().trim(),
+          $('input[name="q2"]:checked').val().trim(),
+          $('input[name="q3"]:checked').val().trim(),
+          $('input[name="q4"]:checked').val().trim(),
+          $('input[name="q5"]:checked').val().trim(),
+          $('input[name="q6"]:checked').val().trim(),
+          $('input[name="q7"]:checked').val().trim(),
+          $('input[name="q8"]:checked').val().trim(),
+          $('input[name="q9"]:checked').val().trim(),
+          $('input[name="q10"]:checked').val().trim()
+        ]
       }
-    })
+      $.post("/api/friends", newFriend)
+        .then(function (data) {
+          console.log(`name: ${data.name} \n photo: ${data.photo} \n scores: ${data.scores}`)
+
+          $("#friend-result").html (
+              `<img src=${data.photo} width=50% height=auto alt="no photo available">
+              <h1>${data.name}</h1>
+              `
+          )
+
+        });
+    });
   </script>
 
 

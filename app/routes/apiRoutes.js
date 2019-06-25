@@ -1,17 +1,25 @@
-var friends = require('./../data/friends')
-var friendMatch = require('../data/friendMatch')
 
 
-module.exports = function(app) {
-  app.get('/api/friends', function(req, res) {
-    return res.json(friends)
-  })
 
-  app.post('/api/friends', function(req, res) {
-    let newFriend = req.body;
-    res.json(friendMatch(newFriend.scores))
-   
-    // return match
-    friends.push(newFriend);
-  })
-}
+ 
+
+module.exports = function (app){
+
+    const {friends, findFriend } = require("../data/friends.js");
+    app.get("/api/friends",(req, res) => {
+        res.json(friends);
+
+    });
+
+    app.post("/api/new", (req, res) => {
+        // create new friend object with user input from the form
+        let friend = req.body;
+
+        // convert scores to number 
+        friend.scores = friend.scores.map(item => parseInt(item));
+        // find best match and send back to the user
+        findFriend(friend).then(data => {
+            res.send(data);
+        })
+    })
+}   
