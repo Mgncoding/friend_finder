@@ -1,3 +1,3 @@
 # friend_finder
 
-https://sheltered-citadel-41886.herokuapp.com/
+ https://alluring-mesa-verde-72708.herokuapp.com/
