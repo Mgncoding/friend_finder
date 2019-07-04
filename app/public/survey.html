@@ -1,204 +1,183 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    
+    <title>Survey</title>
 </head>
-
 <body>
-  <div class="container-fluid">
-    <div class="row">
-
-      <div class="col-1"></div>
-
-      <div class="col-10 mt-2">
-        <h2>Friend Survey 2.0!</h2>
-        <hr>
-
-        <form id=form-friend>
-          <div class="user-info">
-            <label for="">Name</label>
-            <input id="name" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">required</small>
-            <br>
-            <label for="">Link to a photo of you</label>
-            <input id="photo" type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">required</small>
-          </div>
-          <hr>
-          <div class="q1">
-            Question 1: Good Morning America<br>
-            <input type="radio" name="q1" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q1" value="2"> Agree<br>
-            <input type="radio" name="q1" value="3"> Neutral<br>
-            <input type="radio" name="q1" value="4"> Disagree<br>
-            <input type="radio" name="q1" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q2">
-            Question 2: Trying to sleep and code just don't work.<br>
-            <input type="radio" name="q2" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q2" value="2"> Agree<br>
-            <input type="radio" name="q2" value="3"> Neutral<br>
-            <input type="radio" name="q2" value="4"> Disagree<br>
-            <input type="radio" name="q2" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q3">
-            Question 3: Can you lick your elbow<br>
-            <input type="radio" name="q3" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q3" value="2"> Agree<br>
-            <input type="radio" name="q3" value="3"> Neutral<br>
-            <input type="radio" name="q3" value="4"> Disagree<br>
-            <input type="radio" name="q3" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q4">
-            Question 4: Listen to instrumentals music over the radio<br>
-            <input type="radio" name="q4" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q4" value="2"> Agree<br>
-            <input type="radio" name="q4" value="3"> Neutral<br>
-            <input type="radio" name="q4" value="4"> Disagree<br>
-            <input type="radio" name="q4" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q5">
-            Question 5: Squirrel<br>
-            <input type="radio" name="q5" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q5" value="2"> Agree<br>
-            <input type="radio" name="q5" value="3"> Neutral<br>
-            <input type="radio" name="q5" value="4"> Disagree<br>
-            <input type="radio" name="q5" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q6">
-            Question 6: Spent many hours on this assignment<br>
-            <input type="radio" name="q6" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q6" value="2"> Agree<br>
-            <input type="radio" name="q6" value="3"> Neutral<br>
-            <input type="radio" name="q6" value="4"> Disagree<br>
-            <input type="radio" name="q6" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q7">
-            Question 7: Taco Tuesday<br>
-            <input type="radio" name="q7" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q7" value="2"> Agree<br>
-            <input type="radio" name="q7" value="3"> Neutral<br>
-            <input type="radio" name="q7" value="4"> Disagree<br>
-            <input type="radio" name="q7" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q8">
-            Question 8: How has coding been for you?<br>
-            <input type="radio" name="q8" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q8" value="2"> Agree<br>
-            <input type="radio" name="q8" value="3"> Neutral<br>
-            <input type="radio" name="q8" value="4"> Disagree<br>
-            <input type="radio" name="q8" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q9">
-            Question 9: Are you a fan of the Live action Disney movies?<br>
-            <input type="radio" name="q9" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q9" value="2"> Agree<br>
-            <input type="radio" name="q9" value="3"> Neutral<br>
-            <input type="radio" name="q9" value="4"> Disagree<br>
-            <input type="radio" name="q9" value="5"> Strongly Disagree<br>
-          </div>
-          <div class="q10">
-            Question 10: Is your favorite color yellow?<br>
-            <input type="radio" name="q10" value="1" required> Strongly Agree<br>
-            <input type="radio" name="q10" value="2"> Agree<br>
-            <input type="radio" name="q10" value="3"> Neutral<br>
-            <input type="radio" name="q10" value="4"> Disagree<br>
-            <input type="radio" name="q10" value="5"> Strongly Disagree<br>
-          </div>
-      </div>
-      <button id="submitS" type="submit" class="mt-2 mb-4 btn btn-primary">Submit</button>
-      <hr>
-      <div class="mt-1 mb-2">
-        <a href="/api/friends">api</a> | <a href="https://github.com/Mgncoding/friend-finder">github</a>
-      </div>
-    </div>
-    </form>
-    <!-- <div class="col-1"></div> -->
-
-
-
-
-    <!-- modal -->
-    <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModal"
-      aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Your best match</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body text-center" id="friend-result" style="color: black;">
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+    
+    <div class="container">
+        <h1 class="text-center m-5">Friend Finder 2.0</h1>
+    
+        <!-- form -->
+        <form id="friend-form">
+            <div class="user-info">
+                Name<br>
+                <input type="text" name="name" style="width: 100%;" required><br>
+                Link to photo<br>
+                <input type="text" name="photo" style="width: 100%;" required><br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 1</strong><br>
+                You prefer pancakes over waffles.<br>
+                <input type="radio" name="q1" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q1" value="2"> Agree<br>
+                <input type="radio" name="q1" value="3"> Neutral<br>
+                <input type="radio" name="q1" value="4"> Disagree<br>
+                <input type="radio" name="q1" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 2</strong><br>
+                Trying to sleep and code just don't work.<br>
+                <input type="radio" name="q2" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q2" value="2"> Agree<br>
+                <input type="radio" name="q2" value="3"> Neutral<br>
+                <input type="radio" name="q2" value="4"> Disagree<br>
+                <input type="radio" name="q2" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 3</strong><br>
+                You enjoy morning walks.<br>
+                <input type="radio" name="q3" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q3" value="2"> Agree<br>
+                <input type="radio" name="q3" value="3"> Neutral<br>
+                <input type="radio" name="q3" value="4"> Disagree<br>
+                <input type="radio" name="q3" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 4</strong><br>
+                Enjoy listening to instrumental music over radio.<br>
+                <input type="radio" name="q4" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q4" value="2"> Agree<br>
+                <input type="radio" name="q4" value="3"> Neutral<br>
+                <input type="radio" name="q4" value="4"> Disagree<br>
+                <input type="radio" name="q4" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 5</strong><br>
+                Squirrel?.<br>
+                <input type="radio" name="q5" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q5" value="2"> Agree<br>
+                <input type="radio" name="q5" value="3"> Neutral<br>
+                <input type="radio" name="q5" value="4"> Disagree<br>
+                <input type="radio" name="q5" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 6</strong><br>
+               Spent many hours on this assignment.<br>
+                <input type="radio" name="q6" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q6" value="2"> Agree<br>
+                <input type="radio" name="q6" value="3"> Neutral<br>
+                <input type="radio" name="q6" value="4"> Disagree<br>
+                <input type="radio" name="q6" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 7</strong><br>
+                Fan of taco Tuesday over burrito Thursday.<br>
+                <input type="radio" name="q7" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q7" value="2"> Agree<br>
+                <input type="radio" name="q7" value="3"> Neutral<br>
+                <input type="radio" name="q7" value="4"> Disagree<br>
+                <input type="radio" name="q7" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 8</strong><br>
+                How has coding been for you.<br>
+                <input type="radio" name="q8" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q8" value="2"> Agree<br>
+                <input type="radio" name="q8" value="3"> Neutral<br>
+                <input type="radio" name="q8" value="4"> Disagree<br>
+                <input type="radio" name="q8" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 9</strong><br>
+                Are you a fan of the live action disney movies.<br>
+                <input type="radio" name="q9" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q9" value="2"> Agree<br>
+                <input type="radio" name="q9" value="3"> Neutral<br>
+                <input type="radio" name="q9" value="4"> Disagree<br>
+                <input type="radio" name="q9" value="5"> Strongly Disagree<br>
+            </div>
+            <div class="question">
+                <strong style="font-size: 1.5em;">Question 10</strong><br>
+                Is your favorite color yellow.<br>
+                <input type="radio" name="q10" value="1" required> Strongly Agree<br>
+                <input type="radio" name="q10" value="2"> Agree<br>
+                <input type="radio" name="q10" value="3"> Neutral<br>
+                <input type="radio" name="q10" value="4"> Disagree<br>
+                <input type="radio" name="q10" value="5"> Strongly Disagree<br>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary m-5">Submit</button>
+        </form>
+    
+    
+        <!-- Modal -->
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog"
+            aria-labelledby="friendModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="color: black;">Your best match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center" id="friend-result" style="color: black;">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  </div>
-  </div>
 
-  <!-- bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- javascript -->
+    <script>
+        $('#friend-form').on('submit', () => {
+            event.preventDefault()
+            let newFriend = {
+                name: $('input[name="name"]').val().trim(),
+                photo: $('input[name="photo"]').val().trim(),
+                scores: [
+                    $('input[name="q1"]:checked').val().trim(),
+                    $('input[name="q2"]:checked').val().trim(),
+                    $('input[name="q3"]:checked').val().trim(),
+                    $('input[name="q4"]:checked').val().trim(),
+                    $('input[name="q5"]:checked').val().trim(),
+                    $('input[name="q6"]:checked').val().trim(),
+                    $('input[name="q7"]:checked').val().trim(),
+                    $('input[name="q8"]:checked').val().trim(),
+                    $('input[name="q9"]:checked').val().trim(),
+                    $('input[name="q10"]:checked').val().trim()
+                ]
+            }
+            $.post('/api/friends', newFriend)
+                .then( data => {
+                    console.log(`name: ${data.name} \nphoto: ${data.photo} \nscores: ${data.scores}`)
+                    $('#friend-result').html(
+                        `
+                            <img src=${data.photo} width=50% height=auto alt="no photo available">
+                            <h1>${data.name}</h1>
+                        `
+                    )
+                    $('#friendModal').modal('toggle')
+                })
+        })
     </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-  <!-- logic -->
-  <script type="text/javascript"></script>
-  <script>
-    $("#form-friend").on("submit", function (event) {
-      event.preventDefault();
-
-      var newFriend = {
-        name: $("input[name='name']").val().trim(),
-        photo: $("input[name='photo']").val().trim(),
-        scores: [
-          $('input[name="q1"]:checked').val().trim(),
-          $('input[name="q2"]:checked').val().trim(),
-          $('input[name="q3"]:checked').val().trim(),
-          $('input[name="q4"]:checked').val().trim(),
-          $('input[name="q5"]:checked').val().trim(),
-          $('input[name="q6"]:checked').val().trim(),
-          $('input[name="q7"]:checked').val().trim(),
-          $('input[name="q8"]:checked').val().trim(),
-          $('input[name="q9"]:checked').val().trim(),
-          $('input[name="q10"]:checked').val().trim()
-        ]
-      }
-      $.post("/api/friends", newFriend)
-        .then(function (data) {
-          console.log(`name: ${data.name} \n photo: ${data.photo} \n scores: ${data.scores}`)
-
-          $("#friend-result").html (
-              `<img src=${data.photo} width=50% height=auto alt="no photo available">
-              <h1>${data.name}</h1>
-              `
-          )
-
-        });
-    });
-  </script>
-
-
-
-
 </body>
-
 </html>

@@ -1,6 +1,7 @@
 // Requiring express
 const express = require("express");
 const app = express();
+const path = require("path")
 
 // Getting PORT 
 const PORT = process.env.PORT || 8080;
